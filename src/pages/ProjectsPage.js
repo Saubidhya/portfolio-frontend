@@ -196,7 +196,7 @@ const ProjectsPage = () => {
               
               <div style={{marginBottom: '15px'}}>
                 {project.projectUrl && <a href={project.projectUrl} target="_blank" rel="noreferrer" style={{marginRight: '10px'}}>Live Demo</a>}
-                {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noreferrer">GitHub</a>}
+                {project.githubUrl && <a href="https://github.com/Saubidhya/portfolio-frontend" target="_blank" rel="noreferrer">GitHub</a>}
               </div>
 
               <div className="actions">
