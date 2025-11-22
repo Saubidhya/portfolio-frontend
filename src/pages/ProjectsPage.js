@@ -195,7 +195,7 @@ const ProjectsPage = () => {
               <p><strong>Tech:</strong> {project.technologies.join(', ')}</p>
               
               <div style={{marginBottom: '15px'}}>
-                {project.projectUrl && <a href={project.projectUrl} target="_blank" rel="noreferrer" style={{marginRight: '10px'}}>Live Demo</a>}
+                {project.projectUrl && <a href="https://portfolio-frontend-kkc6.onrender.com/" target="_blank" rel="noreferrer" style={{marginRight: '10px'}}>Live Demo</a>}
                 {project.githubUrl && <a href="https://github.com/Saubidhya/portfolio-frontend" target="_blank" rel="noreferrer">GitHub</a>}
               </div>
 
