@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Connects to your deployed Render Backend
 const API_URL = 'https://portfolio-backend-rvbw.onrender.com/api';
 
 const api = axios.create({
@@ -8,6 +9,21 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+// --- INTERCEPTOR: Add Token to Requests ---
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+}, (error) => {
+  return Promise.reject(error);
+});
+
+// --- AUTH APIs ---
+export const loginUser = (credentials) => api.post('/users/login', credentials);
+export const registerUser = (userData) => api.post('/users', userData);
 
 // --- SERVICE APIs ---
 export const getServices = () => api.get('/services');
