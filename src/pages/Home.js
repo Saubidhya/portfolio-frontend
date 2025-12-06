@@ -15,7 +15,6 @@ const Home = () => {
             See My Work
           </button>
         </Link>
-        {/* FIXED THE LINK BELOW: /contacts instead of /contact */}
         <Link to="/contacts">
           <button style={{ 
             fontSize: '1.1rem', 

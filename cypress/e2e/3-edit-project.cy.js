@@ -1,7 +1,7 @@
 describe('Part 3: Edit Project', () => {
     beforeEach(() => {
       cy.visit('/login');
-      cy.get('input[type="email"]').type('spandi14@centennialcollege.ca'); 
+      cy.get('input[type="email"]').type('spandi14@my.centennialcollege.ca'); 
       cy.get('input[type="password"]').type('Saubidhya123@');
       cy.get('button[type="submit"]').click();
       cy.wait(1000);

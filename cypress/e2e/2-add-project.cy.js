@@ -4,7 +4,7 @@ describe('Part 2: Sign In and Add Project', () => {
       cy.visit('/login');
       
       // 2. Enter REAL credentials (MAKE SURE THESE ARE CORRECT)
-      cy.get('input[type="email"]').type('spandi14@centennialcollege.ca'); 
+      cy.get('input[type="email"]').type('spandi14@my.centennialcollege.ca'); 
       cy.get('input[type="password"]').type('Saubidhya123@'); 
       
       // 3. Click Login

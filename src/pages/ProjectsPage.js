@@ -33,10 +33,7 @@ const ProjectsPage = () => {
     }
   };
 
-  // ... (handleChange, handleSubmit, handleDelete same as before) ...
-  // Just re-paste the handler functions from your previous code here
   
-  // I will write the full component structure so you don't get confused
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
@@ -89,7 +86,6 @@ const ProjectsPage = () => {
         <div className="form-container">
           <h2>{editingId ? 'Edit Project' : 'Add New Project'}</h2>
           <form onSubmit={handleSubmit}>
-            {/* ... (Inputs same as before) ... */}
             <input name="title" value={formData.title} onChange={handleChange} placeholder="Title" required />
             <textarea name="description" value={formData.description} onChange={handleChange} placeholder="Desc" required />
             <input name="technologies" value={formData.technologies} onChange={handleChange} placeholder="Tech" />
